@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('konten')
-    <h1>Halaman kontak kami </h1>
+    <h1>Halaman untuk data produk</h1>
 @endsection

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProdukController;
 
 Route::get('/', function () {
     return view('pages.beranda');
@@ -8,16 +9,16 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view('pages.about',[
-        'nama' => 'Fais Faishal',
+        'nama' => 'Faishal',
         'umur' => 20,
-        'alamat' => 'Indonesia',
-    ]);
-});
-
-Route::get('/about/{id}/detail',function($id){
-    return view('pages.detail',[
-        'nomer'=>$id
+        'alamat' => 'jl. israel hama',
     ]);
 });
 
 Route::view('/contact','pages.contact');
+
+// satu controller
+
+Route::get('/product',[ProdukController::class,'index']); // read data menampilkan data
+
+Route::get('/product/tambah',[ProdukController::class,'tambahProduk']);
