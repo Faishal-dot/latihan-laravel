@@ -1,4 +1,7 @@
 <style>
+    body {
+      padding-bottom: 60px; /* lebih besar dari tinggi footer */
+  }
         .footer{
             position: fixed;
             bottom: 0;

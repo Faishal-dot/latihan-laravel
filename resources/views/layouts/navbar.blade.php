@@ -12,7 +12,7 @@
         }
 </style>
 <div class="footer">
-    <span>Copyright tempk laravel</span>
+    <span>Copyright pais laravel</span>
 </div>
 <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
